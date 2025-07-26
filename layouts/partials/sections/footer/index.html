@@ -1,10 +1,11 @@
 <footer>
-    <!-- Recent blog posts -->
-    {{- partial "sections/footer/recentBlogPosts.html" . -}}
-
     <!-- Social Icons -->
-    {{- partial "sections/footer/socialNetwork.html" . -}}
+    <div class="text-center">
+        {{- partial "sections/footer/socialNetwork.html" . -}}
 
-    <!-- Copyright -->
-    {{- partial "sections/footer/copyright.html" . -}}
+        <div class="py-3">
+            {{ .Site.Params.hero.title }}
+        </div>
+    </div>
+
 </footer>

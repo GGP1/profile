@@ -1,4 +1,5 @@
 {{ define "head" }}
+<link rel=stylesheet href=/css/404.css media=all>
 <meta name="description" content={{ .Site.Params.description }}>
 {{ end }}
 
@@ -7,8 +8,12 @@
 {{ end }}
 
 {{ define "main" }}
-<div class="container py-5 text-center">
-    <img src="{{ .Site.Params.staticPath }}/404.png" alt='{{ .Site.Params.terms.pageNotFound | default "404 page not found" }}' class="img-fluid" width="40%">
+<div id="image" class="container py-5 text-center">
+    <img src="{{ .Site.Params.staticPath }}/404.png"
+        alt='{{ .Site.Params.terms.pageNotFound | default "404 page not found" }}' class="img-fluid" width="40%">
     <h1>{{ .Site.Params.terms.pageNotFound | default "404 page not found" }}</h1>
 </div>
+
+{{- partial "sections/recentBlogPosts.html" . -}}
+
 {{ end }}

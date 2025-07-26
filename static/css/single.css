@@ -4,7 +4,7 @@
     font-size: 17px;
 }
 
-#single .title > h1 {
+#single .title>h1 {
     opacity: 0.8;
     color: var(--text-color) !important;
 }
@@ -43,15 +43,22 @@
     height: 2px;
     bottom: 0.37em;
     background-color: var(--primary-color);
-    transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
     opacity: 0.5;
 }
 
-#single .page-content a:hover::after, #single .page-content a:focus::after, #single .page-content a:active::after {
+#single .page-content a:hover::after,
+#single .page-content a:focus::after,
+#single .page-content a:active::after {
     width: 100%;
 }
 
-#single .page-content h1, #single .page-content h2, #single .page-content h3, #single .page-content h4, #single .page-content h5, #single .page-content h6 {
+#single .page-content h1,
+#single .page-content h2,
+#single .page-content h3,
+#single .page-content h4,
+#single .page-content h5,
+#single .page-content h6 {
     color: var(--text-link-color) !important;
     margin-bottom: 0.7em;
     opacity: 0.9;
@@ -67,7 +74,8 @@
     border-radius: 5px;
 }
 
-#single .page-content blockquote, #single .page-content blockquote * {
+#single .page-content blockquote,
+#single .page-content blockquote * {
     background-color: var(--secondary-color) !important;
 }
 
@@ -83,25 +91,26 @@
     opacity: 0.8;
 }
 
-#single .page-content table > tr {
+#single .page-content table>tr {
     height: 40px !important;
 }
 
-#single .page-content table > thead > tr > th {
+#single .page-content table>thead>tr>th {
     padding: 0.5rem !important;
     background-color: var(--primary-color) !important;
     color: var(--secondary-color) !important;
     border: 1px solid var(--secondary-color);
     opacity: 0.9;
 }
-#single .page-content table > tbody > tr > td {
+
+#single .page-content table>tbody>tr>td {
     padding: 0.5rem !important;
     border: 1px solid var(--secondary-color);
     background-color: var(--secondary-color) !important;
     opacity: 0.9;
 }
 
-#single .page-content table > thead > tr {
+#single .page-content table>thead>tr {
     background-color: var(--secondary-color) !important;
     color: var(--secondary-color) !important;
 }
@@ -109,45 +118,46 @@
 /* code */
 
 #single .page-content pre {
-  border-radius: 0.7em !important;
-  margin: 5px;
-  margin-bottom: 2em;
-  padding: 2em;
-  background-color: var(--secondary-color) !important;
-  color: var(--text-secondary-color) !important;
-  max-height: 450px;
+    border-radius: 0.7em !important;
+    margin: 5px;
+    margin-bottom: 2em;
+    padding: 2em;
+    background-color: var(--secondary-color) !important;
+    color: var(--text-secondary-color) !important;
+    /* max-height: 450px; */
 }
 
-#single .page-content pre > code {
-  color: var(--text-secondary-color) !important;
+#single .page-content pre>code {
+    color: var(--text-secondary-color) !important;
 }
 
 #single .page-content code {
-  color: var(--primary-color) !important;
+    color: var(--primary-color) !important;
 }
 
 /* kbd and mark */
 
 #single .page-content kbd {
-  color: var(--primary-color) !important;
-  background-color: var(--secondary-color) !important;
+    color: var(--primary-color) !important;
+    background-color: var(--secondary-color) !important;
 }
 
 #single .page-content mark {
-  color: var(--primary-color) !important;
-  background-color: var(--secondary-color) !important;
+    color: var(--primary-color) !important;
+    background-color: var(--secondary-color) !important;
 }
 
 /* list */
 
-#single .page-content ol, #single .page-content ul {
+#single .page-content ol,
+#single .page-content ul {
     margin-bottom: 1.2em;
     padding-left: 1.5em;
-    list-style-position: inside;
     opacity: 0.9;
 }
 
-#single .page-content ol li li, #single .page-content ul li li {
+#single .page-content ol li li,
+#single .page-content ul li li {
     margin-bottom: 0.5em;
     padding-left: 1.5em;
 }
@@ -162,7 +172,7 @@
 }
 
 #single .sticky-sidebar {
-  position: sticky;
+    position: sticky;
 }
 
 #single .sticky-sidebar ::-webkit-scrollbar {
@@ -173,7 +183,7 @@
 /* Tags */
 #single aside.tags {
     max-height: 35vh;
-    overflow: scroll;
+    overflow-y: auto;
 }
 
 #single aside.tags h5 {
@@ -204,7 +214,7 @@
 #single aside.toc {
     padding: .7rem 1rem;
     max-height: 50vh;
-    overflow: scroll;
+    overflow-y: auto;
 }
 
 #single aside.toc h5 {
@@ -213,26 +223,29 @@
     color: var(--text-color);
 }
 
-#single aside.toc .toc-content ol, #single aside.toc .toc-content ul {
-    margin-bottom: 1em;
+#single aside.toc .toc-content ol,
+#single aside.toc .toc-content ul {
     padding-left: .5em;
     list-style: none;
     opacity: 0.9;
 }
 
-#single aside.toc .toc-content ol li a, #single aside.toc .toc-content ul li a {
+#single aside.toc .toc-content ol li a,
+#single aside.toc .toc-content ul li a {
     font-size: 16px;
     text-decoration: none;
     color: var(--text-link-color) !important;
     opacity: 0.9;
 }
 
-#single aside.toc .toc-content ol li a:hover, #single aside.toc .toc-content ul li a:hover {
+#single aside.toc .toc-content ol li a:hover,
+#single aside.toc .toc-content ul li a:hover {
     color: var(--primary-color);
     opacity: 1.2;
 }
 
-#single aside.toc .toc-content ol li li, #single aside.toc .toc-content ul li li {
+#single aside.toc .toc-content ol li li,
+#single aside.toc .toc-content ul li li {
     padding-left: .7em;
 }
 
