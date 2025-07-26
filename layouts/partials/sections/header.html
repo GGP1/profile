@@ -54,7 +54,6 @@
                 {{ if and (or (.Site.Params.favicon) (.Site.Params.navbar.brandLogo)) (.Site.Params.navbar.showBrandLogo | default true) }}
                 <img src="{{ .Site.Params.navbar.brandLogo | default .Site.Params.favicon }}" width="30" height="30"
                     class="d-inline-block align-top">
-                {{ .Site.Params.navbar.brandName | default .Site.Params.title }}
                 {{ else }}
                 {{ .Site.Params.navbar.brandName | default .Site.Params.title }}
                 {{ end }}
@@ -117,15 +116,6 @@
                         <a class="nav-link" href="{{ .Site.BaseURL | relURL }}#projects"
                             aria-label="projects">
                             {{ .Site.Params.projects.title | default "Projects" }}
-                        </a>
-                    </li>
-                    {{ end }}
-
-                    {{ if and (.Site.Params.achievements.enable | default false) (not (.Site.Params.navbar.menus.disableAchievements | default false)) }}
-                    <li class="nav-item navbar-text">
-                        <a class="nav-link" href="{{ .Site.BaseURL | relURL }}#achievements"
-                            aria-label="achievements">
-                            {{ .Site.Params.achievements.title | default "Achievements" }}
                         </a>
                     </li>
                     {{ end }}
